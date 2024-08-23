@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Analysis</title>
+</head>
+<body>
+    <h1>Data Entries</h1>
+    <ul>
+        {% for entry in data_entries %}
+            <li>{{ entry.timestamp }} - {{ entry.value }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
